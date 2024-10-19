@@ -12,9 +12,9 @@ const DataStream = ({ data }) => {
     };
 
     return (
-        <div className='overflow-y-auto max-h-[300px]'>
+        <div className='overflow-y-auto min-h-[300px]'>
             
-            <div id="dataDisplay" className="bg-editor-gray text-white p-4 rounded overflow-y-auto">
+            <div id="dataDisplay" className="bg-editor-gray min-h-[300px] h-full text-white p-4 rounded overflow-y-auto">
                 {data ? renderData(data) : <p>No data available.</p>}
             </div>
         </div>

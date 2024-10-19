@@ -12,8 +12,6 @@ export default function Home() {
   const [plotLoaded, setPlotLoaded] = useState(false);
   const [buttonText, setButtonText] = useState("Click to Generate Data");
 
-  console.log(analysis);
-
   const fetchData = async () => {
     const response = await fetch('http://localhost:8000/simulate');
     const jsonData = await response.json();

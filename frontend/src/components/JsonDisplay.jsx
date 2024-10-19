@@ -20,7 +20,7 @@ const JsonDisplay = ({ data }) => {
     };
 
     return (
-        <div style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', color: '#fff' }} className='bg-editor-gray'>
+        <div style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', color: '#fff' }} className='bg-editor-gray min-h-[300px]'>
             {renderData(data)}
         </div>
     );
